@@ -19,6 +19,13 @@ jobs:
       - name: Create iOS files if missing
         run: flutter create . --platforms=ios
 
+      - name: Update iOS Deployment Target
+        run: |
+          cd ios
+          echo "platform :ios, '15.5'" > Podfile.new
+          cat Podfile >> Podfile.new
+          mv Podfile.new Podfile
+
       - name: Install dependencies
         run: flutter pub get
 
