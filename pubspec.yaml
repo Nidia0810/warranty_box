@@ -1,0 +1,38 @@
+name: warranty_box
+description: Organiza faturas, garantias e respetivos comprovativos.
+publish_to: none
+version: 0.1.0+1
+
+environment:
+  sdk: '>=3.12.0 <4.0.0'
+  flutter: '>=3.44.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: 3.4.3
+  sqflite: 2.4.5
+  path: 1.9.1
+  path_provider: 2.1.6
+  flutter_secure_storage: 11.2.0
+  image_picker: 1.2.4
+  google_mlkit_text_recognition: 0.17.1
+  flutter_local_notifications: 22.3.2
+  timezone: 0.11.2
+  flutter_timezone: 5.1.1
+  purchases_flutter: 10.18.0
+  pdf: 3.13.1
+  printing: 5.15.1
+  file_picker: 13.1.0
+  archive: 4.5.2
+  uuid: 4.6.0
+  intl: 0.20.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: 6.0.0
+  sqflite_common_ffi: 2.4.4
+
+flutter:
+  uses-material-design: true
